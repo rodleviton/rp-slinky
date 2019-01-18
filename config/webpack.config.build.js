@@ -39,18 +39,10 @@ module.exports = {
         use: [
           "style-loader",
           {
-            loader: "css-loader",
-            options: {
-              importLoaders: 1,
-              minimize: true,
-              sourceMap: true
-            }
+            loader: "css-loader"
           },
           {
-            loader: "sass-loader",
-            options: {
-              sourceMap: true
-            }
+            loader: "sass-loader"
           }
         ]
       },
@@ -59,17 +51,12 @@ module.exports = {
         use: [
           "style-loader",
           {
-            loader: "css-loader",
-            options: {
-              importLoaders: 1,
-              minimize: true,
-              sourceMap: true
-            }
+            loader: "css-loader"
           }
         ]
       },
       {
-        test: /\.(jpe?g|png|gif)$/,
+        test: /\.(jpe?g|png|gif|svg)$/,
         loader: "file-loader",
         options: {
           name: "[path][name].[ext]"
