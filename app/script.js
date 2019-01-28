@@ -44,7 +44,6 @@ const getRandomCells = (grid, amount) => {
     const row = grid[Math.floor(Math.random() * grid.length)];
     const cell = row[Math.floor(Math.random() * row.length)];
 
-    // reset Opacity
     cell.opacity = 1;
 
     randomCells.push(cell);
@@ -66,8 +65,6 @@ const animate = (canvas, grid, initialCells) => {
 
     cells.forEach((cell, index) => {
       if (cell.opacity - cell.speed >= 0) {
-        // ctx.globalAlpha = cell.opacity - cell.speed;
-
         cell.opacity = cell.opacity - cell.speed;
       } else {
         ctx.globalAlpha = 0;
