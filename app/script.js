@@ -11,7 +11,7 @@ const baseStrokeColour = "#323232";
 const makeGrid = (canvasWidth, canvasHeight, cellWidth, cellHeight) => {
   const cellsX = Math.ceil(canvasWidth / (cellWidth + offset));
   const cellsY = Math.ceil(canvasHeight / (cellWidth + offset));
-  const colours = ["#22D5E1"];
+  const colours = ["#000"];
 
   let grid = [];
 
